@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Images/logo.svg" alt="Logo" width="50" height="38" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                </ul>
+                <form class="d-flex justify-content-center flex-fill mx-5" role="search">
+                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                        aria-label="Search">
+                </form>
+
+                <div class="dropdown m-0 mt-lg-0 mt-md-4 text-center">
+                    <a class="btn bg-white rounded-pill border border-secondary-subtle" id="cart" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-cart-check-fill"></i> Cart <span class="sec-color fw-semibold" id="num">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    
+    <div class="container-fluid my-5 pt-3 ">
+        <div class="ro justify-content-en  position-fixed" style="top: 0px; right: 0; z-index: 9;">
+            <div class="card me-4" style="width: 288px; display: none; top: 75px; right: 0;" id="cart-summary">
+                <p class="fs-5 text-center border-bottom" style="line-height: 45px;">CART SUMMARY</p>
+                <div class="card-body">
+                    <p id="addcart"></p>
+                    <div class="card-footer">
+                        Subtotal:
+                    </div>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                        <a class="btn btn-primary" id="btn-show">CheckOut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav pills -->
+        <ul class="nav nav-pills justify-content-center" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active text-blac" data-bs-toggle="pill" href="#Laptop">Laptops</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#Mobile">Mobiles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#watch">Smart Watch</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content products">
+            <div id="Laptop" class="container-fluid tab-pane active"><br>
+                <div class="product mt-4">
+                    <div class="row row-gap-4">
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/1.jpg" class="card-img-top" height="210px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Lenovo Legion 5</h5>
+                                    <p class="card-text">Lenovo Legion 5 – 82JU01B7ED, Ryzen 7 5800h, 16GB, 512GB SSD,
+                                        RTX
+                                        3070
+                                        8GB, 15.6″ FHD 165Hz sRGB, Windows 11
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="65777">65,777 EGP</p>
+                                    <del>68,444 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/3.1.jpeg" class="card-img-top" height="235px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Lenovo LOQ</h5>
+                                    <p class="card-text">Lenovo LOQ – 82XV00SPED, i5-12450H, 8GB DDR5, 512GB SSD, RTX
+                                        3050 (6GB), 15.6 FHD 144Hz
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="39500">39,500 EGP</p>
+                                    <del>42,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/4.jpeg" class="card-img-top" height="235px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Lenovo ThinkBook</h5>
+                                    <p class="card-text">Lenovo ThinkBook 15 G4, i5-1235u, 8GB, 512GB SSD, NVIDIA MX550,
+                                        15.6″ FHD – 21DJ003UED
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="37999">37,999 EGP</p>
+                                    <del>39,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/5.jpeg" class="card-img-top" height="210px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">ASUS Zenbook</h5>
+                                    <p class="card-text">ASUS Zenbook 14x OLED, i9-13900H, 16GB, 512GB SSD, Iris Xe
+                                        Graphics, 14.5 inch 2.8K OLED 120Hz, Windows 11
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="54666">54,666 EGP</p>
+                                    <del>58,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/6.png" class="card-img-top" height="210px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Apple MacBook Pro</h5>
+                                    <p class="card-text">Apple MacBook Pro 2023, Apple M2 Pro Chip, 12-Core CPU, 1TB
+                                        SSD, 16GB RAM, 16 Inch Liquid Retina XDR, 19‑Core GPU, macOS
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="138000">138,000 EGP</p>
+                                    <del>141,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/8.jpeg" class="card-img-top" height="210px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">ASUS Zenbook 14</h5>
+                                    <p class="card-text">ASUS Zenbook 14 Flip OLED, i7-1360P, 16GB DDR5, 512GB, 14 INCH
+                                        Touch Screen OLED 2.8K 90Hz, Windows 11
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="52500">52,500 EGP</p>
+                                    <del>57,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/1.jpg" class="card-img-top" height="210px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Lenovo Legion 5</h5>
+                                    <p class="card-text">Lenovo Legion 5 – 82JU01B7ED, Ryzen 7 5800h, 16GB, 512GB SSD,
+                                        RTX
+                                        3070
+                                        8GB, 15.6″ FHD 165Hz sRGB, Windows 11
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="65777">65,777 EGP</p>
+                                    <del>68,444 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/7.png" class="card-img-top" height="235px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">HP Victus 15</h5>
+                                    <p class="card-text">HP Victus 15, i5-13420H, 8GB, 512GB SSD, RTX 2050, 15.6 INCH
+                                        FHD 144Hz, Windows 11
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="45222">45,222 EGP</p>
+                                    <del>48,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Mobile" class="container-fluid tab-pane fade"><br>
+                <div class="product mt-4">
+                    <div class="row row-gap-4">
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/apple-iphone-14-pro-max-1_1.jpg" class="card-img-top" height="260px"
+                                    alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Apple iPhone 14</h5>
+                                    <p class="card-text">Apple IPhone-14 Plus With FaceTime 128GB 6GB RAM
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="36999">36,999 EGP</p>
+                                    <del>43,799 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/Apple-IPhone-14-Plus-With-FaceTime-128GB-6GB-RAM.jpeg"
+                                    class="card-img-top" height="260px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Apple Iphone 14 pro max</h5>
+                                    <p class="card-text">Apple Iphone 14 pro max With FaceTime 128GB 6GB RAM
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="39500">39,500 EGP</p>
+                                    <del>42,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/mr167-1.jpg" class="card-img-top" height="260px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Realme 11</h5>
+                                    <p class="card-text">Realme 11 5G With FaceTime - 8GB RAM - 256GB - Gold
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="37999">37,999 EGP</p>
+                                    <del>39,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/mr166-1.jpg" class="card-img-top" height="260px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Realme 11</h5>
+                                    <p class="card-text">Realme 11 5G With FaceTime - 8GB RAM - 256GB - Black
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="37999">37,999 EGP</p>
+                                    <del>39,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/oppo-a98-black-1.jpg" class="card-img-top" height="260px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Oppo A58</h5>
+                                    <p class="card-text">Oppo A58 With FaceTime - 8GB RAM - 256GB - Black
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="30999">30,999 EGP</p>
+                                    <del>35,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/samsung_galaxy_a54_0009_layer_1.jpg" class="card-img-top"
+                                    height="260px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Samsung Galaxy S24</h5>
+                                    <p class="card-text">Samsung Galaxy S24 Ultra - 12GB RAM - 256GB - Violet
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="62999">62,999 EGP</p>
+                                    <del>74,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/Apple-IPhone-15-Pro-With-FaceTime-256GB-8GB.jpeg" class="card-img-top"
+                                    height="260px" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Apple IPhone 15 Pro</h5>
+                                    <p class="card-text">Apple IPhone 15 Pro With FaceTime-256GB-8GB
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="69999">69,999 EGP</p>
+                                    <del>82,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/vivo_y27-black_0005_layer_1.jpg" class="card-img-top" height="260px"
+                                    alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Vivo Y36</h5>
+                                    <p class="card-text">Vivo Y36 - 8GB RAM - 256GB - Vibrant Gold
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="9299">9,299 EGP</p>
+                                    <del>11,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="watch" class="container-fluid tab-pane fade"><br>
+                <div class="product mt-4">
+                    <div class="row row-gap-4">
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/w1.jpeg" class="card-img-top" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Amazfit Bip 3</h5>
+                                    <p class="card-text">Amazfit Bip 3 smart watch
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="1949">1,949 EGP</p>
+                                    <del>2,222 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/w2.jpeg" class="card-img-top" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Amazfit Bip 3</h5>
+                                    <p class="card-text">Amazfit Bip 3 Smart Watch - Black
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="1949">1,949 EGP</p>
+                                    <del>2,222 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/w3.jpeg" class="card-img-top" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Green Lion</h5>
+                                    <p class="card-text">Green Lion G-Master Leather Smart
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="2555">2,555 EGP</p>
+                                    <del>2,999 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/w4.png" class="card-img-top" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Huawei Watch</h5>
+                                    <p class="card-text">Huawei Watch GT 4 Light Gold
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="15599">15,599 EGP</p>
+                                    <del>17,999 EGP </del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/w5.jpeg" class="card-img-top" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Amazfit GTS 4</h5>
+                                    <p class="card-text">Amazfit GTS 4 Smart Satch
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="7799">7,799 EGP</p>
+                                    <del>8,799 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/w6.jpeg" class="card-img-top" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Huawei Watch</h5>
+                                    <p class="card-text">Huawei Watch Fit Special Edition
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="3719">3,719 EGP</p>
+                                    <del>4,199 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/w7.jpeg" class="card-img-top" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Huawei Watch</h5>
+                                    <p class="card-text">Huawei Watch GT 4 Brown Leather
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="11199">11,199 EGP</p>
+                                    <del>12,699 EGPP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <img src="Images/w8.jpeg" class="card-img-top" alt="Laptop">
+                                <div class="card-body bg-body-secondary rounded-top-5">
+                                    <h5 class="card-title">Xiaomi Redmi</h5>
+                                    <p class="card-text">Xiaomi Redmi Watch 3
+                                    </p>
+                                    <p class="card-price sec-color fs-5 fw-bold" style="display: inline-block;"
+                                        price="4299">4,299 EGP</p>
+                                    <del>4,777 EGP</del>
+                                    <div class="d-grid gap-2 col-12 mx-auto">
+                                        <button class="btn btn-primary" type="button">Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
