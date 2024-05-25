@@ -25,10 +25,10 @@ allProducts.forEach(function(item){
         num.innerHTML = count;
 
        let cardTitle = this.closest('.card').querySelector('.card-title');
-       
-       addCart.innerHTML += '<div>' + cardTitle.textContent + '</div>';
-       
        let cardPrice = this.closest('.card').querySelector('.card-price');
+       
+       addCart.innerHTML += '<div class="d-flex justify-content-between">' + '<div>' + cardTitle.textContent + '</div>' + '<div>' + cardPrice.textContent + '</div>' + '</div>';
+       
        totalPrice += +(cardPrice.getAttribute("price"));
        
     //    if(addCart.innerHTML != ""){
@@ -48,10 +48,9 @@ show.onclick = function(){
     
     if (cartSummary.style.display === "block"){
         cartSummary.style.display = "none"
-    }
-    else  {
-        cartSummary.style.display = "block"
-    }
+    } else {
+      cartSummary.style.display = "block";
+  }
   }
 
 
