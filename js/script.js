@@ -14,6 +14,9 @@ var cartSummary = document.getElementById("cart-summary")
 
 var cart = document.getElementById("cart")
 
+let btnClose = document.querySelector(".btn-close")
+// console.log(btnClose)
+
 var count = 0
 
 var totalPrice = 0
@@ -52,7 +55,9 @@ show.onclick = function(){
       cartSummary.style.display = "block";
   }
   }
-
+btnClose.onclick = function(){
+    cartSummary.style.display = "none"
+}
 
 
 
